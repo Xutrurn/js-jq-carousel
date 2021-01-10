@@ -55,16 +55,19 @@ function pallino() {
   var indicePallino = $(this).index();
   $('.images img').removeClass('active');
   $('.images img').eq(indicePallino).addClass('active');
+
 };
 
-function tastiera(valore) {
-  var key = valore.keyCode;
+function tastiera(tasto) {
 
-  if (key === 39) {
+  var tasto = tasto.keyCode;
+
+  if (tasto === 39) {
     pulsanteNext();
-  } else if (key === 37) {
+  } else if (tasto === 37) {
     pulsantePrev();
   }
+
 };
 
 
